@@ -80,6 +80,7 @@ local function get_defaults(opts)
         analysisExcludedFolders = {
           path.join(flutter_sdk_path, "packages"),
           path.join(flutter_sdk_path, ".pub-cache"),
+	  vim.fn.expand("$HOME/AppData/Local/Pub/Cache"),
         },
       },
     },
